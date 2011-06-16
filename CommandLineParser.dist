@@ -1,0 +1,3 @@
+# dist file for Inspection
+darcs      /extensions/CommandLineParser            http://openengine.dk/code/extensions/CommandLineParser
+darcs-dev  /extensions/CommandLineParser            fh.daimi.au.dk:/users/cgd/code/extensions/CommandLineParser
