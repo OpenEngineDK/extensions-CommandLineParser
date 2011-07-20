@@ -60,6 +60,19 @@ class CommandLineParser
          * @return bool to indicate whether a value was set to i.
          */
         bool registerModule(std::string s, int &i);
+        
+        /** 
+         * A method for setting a string if a flag is found in the argv[],
+         * followed by a string.
+         * Will only check till first string match
+         * 
+         * @param s an identifier string to try to match
+         * @param str a string reference, to be set, with the following value, if string match found
+         *
+         * @return bool to indicate whether a value was set to str.
+         */
+        bool registerModule(std::string s, std::string &str);
+        
         //bool registerModule(std::string s, void* v);
     protected:
     private:

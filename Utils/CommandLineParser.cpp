@@ -57,6 +57,19 @@ bool CommandLineParser::registerModule(std::string s, int &i)
     return false;
 }
 
+bool CommandLineParser::registerModule(std::string s, std::string &str)
+{
+    for(unsigned int x=0; x<strings.size(); x++)
+    {
+        std::string s2 = strings.at(x);
+        if (s.compare(s2) == 0)
+        {
+            str = strings.at(x+1);
+        }
+    }
+    return false;
+}
+
 } // NS Utils
 } // NS OpenEngine
 
